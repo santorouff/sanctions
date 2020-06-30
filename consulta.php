@@ -65,7 +65,7 @@ function printDiv() {
 	<?php
 	$servername = "localhost";
 	$username = "root";
-	$password = "mestrAdo123";
+	$password = "password";
 	$dbname = "sancoes";
 
 //	$servername = "sql202.epizy.com";

@@ -68,11 +68,6 @@ function printDiv() {
 	$password = "password";
 	$dbname = "sancoes";
 
-//	$servername = "sql202.epizy.com";
-//	$username = "epiz_26089849";
-//	$password = "pJo4o79YZwkDGQg";
-//	$dbname = "epiz_26089849_sancoes";
-
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	// Check connection

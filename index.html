@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AmlCheck | Sanctions Search</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#contact"><i class="fa fa-fw fa-phone"></i> Contact</a>
+  <a href="#about"><i class="fa fa-fw fa-user"></i> About</a>
+</nav>
+<br>
+
+	<main>
+		<fieldset class="campo">
+			<br>
+			<legend><b>AML Check</b></legend>
+			<form method="get" action="consulta.php">
+				<b>Entity Name:</b> <input id="nome" type="text" name="nome" placeholder="Search"/>
+				<button type="submit" class="botao"><i class="fa fa-fw fa-search"></i></button>
+				<br><br>Similarity: <input type="range" id="similaridade" name="similaridade" min="0" max="100" value="70" class="slider"><span id="similar"></span>%
+			</form>
+		</fieldset>
+	</main>
+
+	<script>
+		var slider = document.getElementById("similaridade");
+		var output = document.getElementById("similar");
+		output.innerHTML = slider.value;
+		
+		slider.oninput = function() {
+		  output.innerHTML = this.value;
+		}
+	</script>
+	
+
+<br>
+
+<footer><i><small>Developed by Guilherme Santoro, Certified Anti-Money Laudering Specialist&reg</small></i></footer>
+</body>
+
+</html>

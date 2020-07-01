@@ -63,10 +63,10 @@ function printDiv() {
 	</script>
 
 	<?php
-	$servername = "localhost";
-	$username = "root";
+	$servername = "servername";
+	$username = "username";
 	$password = "password";
-	$dbname = "sancoes";
+	$dbname = "dbname";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
